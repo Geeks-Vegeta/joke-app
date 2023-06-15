@@ -238,7 +238,7 @@ input {
   }
 
 input[type="text"]{
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 .img-meme{
