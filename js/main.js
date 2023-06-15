@@ -57,6 +57,7 @@ node.addEventListener("keyup", function(event) {
 
     let command_list=["show -n joke", "show -n meme", "clear"]
     let imgs="";
+    let sp=document.getElementById("sp");
 
     let isImage=false;
 
@@ -130,6 +131,8 @@ node.addEventListener("keyup", function(event) {
 
         
           if(node.value==="show -n joke"){
+            sp.innerHTML="New joke is arriving,Please wait."
+
 
           fetch(`https://joke.deno.dev/`).then((data)=>{
             return data.json();
@@ -140,6 +143,8 @@ node.addEventListener("keyup", function(event) {
             })
 
           }if(node.value==="show -n meme"){
+            sp.innerHTML="New meme is arriving,Please wait."
+
             fetch(`https://meme-api.com/gimme`).then((data)=>{
             return data.json();
             }).then((actdata)=>{
