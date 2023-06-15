@@ -117,10 +117,14 @@ html, body{
 }
 
 .list{
-    margin: 1rem 0rem;
+    margin: 1rem 1rem;
+    width: 20rem;
+
 }
 
 .comm{
+    display: flex;
+    justify-content: space-between;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -314,3 +318,7 @@ input[type="text"]{
     text-decoration: none;
     cursor: pointer;
   }
+
+.sample-cursor{
+    margin: 1rem;
+}
