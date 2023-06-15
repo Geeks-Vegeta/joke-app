@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="joke.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joke app</title>
+</head>
+<body id="body">
+
+    <pre class="accii">
+        
+        ██╗ ██████╗ ██╗  ██╗███████╗     █████╗ ██████╗ ██████╗ 
+        ██║██╔═══██╗██║ ██╔╝██╔════╝    ██╔══██╗██╔══██╗██╔══██╗
+        ██║██║   ██║█████╔╝ █████╗      ███████║██████╔╝██████╔╝   
+   ██   ██║██║   ██║██╔═██╗ ██╔══╝      ██╔══██║██╔═══╝ ██╔═══╝ 
+   ╚█████╔╝╚██████╔╝██║  ██╗███████╗    ██║  ██║██║     ██║       
+    ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝  ╚═╝╚═╝     ╚═╝   
+                                                                                   
+    </pre>
+
+    <div class="commands">
+        <p class="commands-heading">Commands</p>
+        <div class="list">
+            <p class="comm"> <span class="red">show -n joke</span>  : return text new  jokes  </p>
+            <p class="comm"><span class="red">show -n meme</span> : return new meme image</p>
+            <p class="comm"><span class="red">clear</span>    : clear entire screen</p>
+ 
+        </div>
+
+        </div>
+       
+
+    <div id="linux-ui">
+        <div id="cursor_ui">
+            <span class="green">shreyas@shreyas-Inspiron-15-3567</span><span class="white">:</span><span class="blue">~/js/jokeapp</span><span class="white">$</span>
+            <span>
+                <input class="linux-text" id="linux-text" type="text" autofocus>
+            </span>
+            <div class="joke">
+                <p></p>
+                <p></p>
+            </div>
+            <div id="spinner" class="spinner">
+                <span class="sp">featching new things.</span>
+                <div class="spinner-line"></div>
+            </div>
+            <div id="progressbarWrapper" class="progressbarWrapper">
+                <span id="greenBar"></span>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
